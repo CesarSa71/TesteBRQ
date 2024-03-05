@@ -2,11 +2,11 @@
 // Abstract class for handlers
 abstract class TradeCategoryAbstractHandler : ITradeCategoryHandler
 {
-    private ITradeCategoryHandler _nextHandler;
+    private ITradeCategoryHandler? _nextHandler;
 
     public TradeCategoryAbstractHandler()
     {
-
+        _nextHandler = null;
     }
 
     public TradeCategoryAbstractHandler(ITradeCategoryHandler nextHandler)
